@@ -274,7 +274,7 @@
     <!-- Hero Section -->
     <section class="hero-pattern pt-32 pb-24 text-white">
         <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row items-center">
+            <div class="flex flex-col md:flex-row items-center">    
                 <div class="md:w-1/2 mb-10 md:mb-0 animate-slide-up">
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
                         مستقبل مشرق begins with <span class="text-accent-500">تعليم متميز</span>
@@ -594,7 +594,88 @@
             </button>
         </div>
     </section>
-
+<!-- Contact & Map Section -->
+<section class="py-16 bg-gray-50" id="contact-form-map">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-black mb-4 text-primary-800">تواصل معنا</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                نحن هنا للإجابة على استفساراتك ومساعدتك في اختيار البرنامج التعليمي المناسب
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Contact Form -->
+            <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+                <h3 class="text-2xl font-bold mb-6 text-primary-800">أرسل رسالة</h3>
+                <form class="space-y-5">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div>
+                            <label for="contact-name" class="block text-gray-700 mb-2 font-medium">الاسم الكامل</label>
+                            <input type="text" id="contact-name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="contact-email" class="block text-gray-700 mb-2 font-medium">البريد الإلكتروني</label>
+                            <input type="email" id="contact-email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="contact-subject" class="block text-gray-700 mb-2 font-medium">الموضوع</label>
+                        <input type="text" id="contact-subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                    </div>
+                    
+                    <div>
+                        <label for="contact-message" class="block text-gray-700 mb-2 font-medium">الرسالة</label>
+                        <textarea id="contact-message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-primary-700 hover:bg-primary-800 text-white py-3 px-4 rounded-lg font-bold text-lg transition duration-300">
+                        إرسال الرسالة
+                    </button>
+                </form>
+            </div>
+            
+            <!-- Map & Contact Info -->
+            <div class="space-y-8">
+                <!-- Map Container -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="h-80 bg-gray-200 flex items-center justify-center">
+                        <!-- سيتم استبدال هذا العنصر بخريطة فعلية -->
+                        <div class="text-center text-gray-500">
+                            <i class="fas fa-map-marker-alt text-4xl mb-3 text-primary-600"></i>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102286.38397081515!2d3.0541532403676444!3d36.75978277272663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fad6795639515%3A0x4ba4b4c9d0a7e602!2sAlgiers!5e0!3m2!1sen!2sdz!4v1757840120725!5m2!1sen!2sdz" width="750" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Additional Contact Info -->
+                <div class="bg-primary-800 text-white rounded-2xl shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-5">معلومات التواصل</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 ml-3 text-primary-300"></i>
+                            <span>العنوان: XXXX</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone mt-1 ml-3 text-primary-300"></i>
+                            <span dir="ltr">+213 0666666</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 ml-3 text-primary-300"></i>
+                            <span>contact@smartlearning.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock mt-1 ml-3 text-primary-300"></i>
+                            <span>الأحد - الخميس: 8 ص - 8 م</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     <!-- Registration Modal -->
     <div class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 hidden modal" id="registration-modal">
         <div class="bg-white rounded-2xl shadow-2xl w-11/12 md:w-3/4 lg:w-1/2 max-w-2xl p-6 relative">
